@@ -1,0 +1,40 @@
+GET http://localhost:3000/pacientes HTTP/1.1
+
+###
+GET http://localhost:3000/pacientes/ HTTP/1.1
+
+###
+POST http://localhost:3000/pacientes HTTP/1.1
+content-type: application/json
+
+{
+    "id": 22,
+    "nombre": "Alejandra",
+    "apellido": "Velez",
+    "correo": "alejandra@example.com",
+    "edad": "21",
+    "telefono": "526-465-596"
+}
+
+
+###
+
+PUT http://localhost:3000/pacientes/1 HTTP/1.1
+content-type: application/json
+
+{
+   "id": 1,
+    "nombre": "Maria",
+    "apellido": "Sandoval",
+    "correo": "maria@example.com",
+    "edad": "21",
+    "telefono": "786-526-4589"
+   
+    
+}
+
+
+###
+DELETE http://localhost:3000/pacientes/8 HTTP/1.1
+
+
